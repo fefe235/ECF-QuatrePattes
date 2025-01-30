@@ -1,0 +1,51 @@
+body{
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#057858 ;
+    height: 8vh;
+}
+header nav a {
+    text-decoration: none;
+    color: #fff;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 5vw;
+}
+header div h5 {
+    color: #fff;
+}
+header div {
+    display: flex;
+    align-items: center;
+    margin-left: 3vw;
+}
+header button {
+    background-color:#FF0000 ;
+    display: flex;
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1em 0 1em ;
+    color: #fff;
+}
