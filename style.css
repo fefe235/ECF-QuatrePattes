@@ -49,3 +49,19 @@ header button {
     padding:0 1em 0 1em ;
     color: #fff;
 }
+
+.container {
+    background-image: url(images/header2\ 1.png);
+    height: 80vh;
+    background-size: 100% 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.container > * {
+    color: #fff;
+}
