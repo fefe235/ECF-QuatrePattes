@@ -252,12 +252,14 @@ header button {
     display: flex;
     flex-direction: row;
     gap:30px;
+    width: clamp(50px , 15vw);
 }
 .containerImpact div div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
 }
 .containerImpact div div img{
@@ -273,9 +275,11 @@ header button {
 
 }
 .containerTemoignage div {
-    width: clamp(200px,22vw);
+    width: 18vw;
+    height: 40vh;
     box-shadow:1px 1px 3px 1px rgba(0,0,0,0.17);
     border-radius: 12px;
+    flex-wrap: wrap;
 }
 
 footer{
@@ -336,6 +340,9 @@ input,select{
     color: #FF0000;
     font-size: small;
 }
+#cacher{
+    display: none;
+}
 
 /* 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -346,6 +353,18 @@ Partie Responsive
 */
 
 @media screen and (max-width: 360px) {
+    .grid{
+        height: 55vh;
+    }
+    .animaux{
+        height: 40vh;
+    }
+    .luna,.oscar,.max{
+        height: 10vh;
+    }
+    .container{
+        height: 50vh;
+    }
     .containerMission div{
         display: flex;
         flex-direction: column;
@@ -365,13 +384,23 @@ Partie Responsive
         flex-direction: column;
     }
     .containerDon{
-        margin: 8vh 10vw 8vh 10vw;
+        margin: 8vh 0 8vh 6vw;
+        
     }
     .containerImpact div{
         display: flex;
         flex-direction: column;
     }
+    .containerTemoignage div {
+        width: 200px;
+    }
     .containerQuizz div div{
         padding-left: 0;
     }
-  }
+    #cacher{
+        display: block;
+    }
+    #acceuil,#contact,#donner{
+        display: none;
+    }
+}
