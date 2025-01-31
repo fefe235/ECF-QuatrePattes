@@ -237,7 +237,7 @@ header button {
 
         }
         .containerImpact{
-            padding-top: 12vh;
+            padding: 12vh 0 12vh 0;
             background-color: #EDFEF6;
             display: flex;
             justify-content: center;
@@ -257,3 +257,41 @@ header button {
             align-items: center;
 
         }
+        .containerImpact div div img{
+            height: 12vh;
+        }
+        .containerTemoignage{
+            margin: 8vh 0 8vh 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+
+        }
+        .containerTemoignage div {
+            width: 22vw;
+            box-shadow:1px 1px 3px 1px rgba(0,0,0,0.17);
+            border-radius: 12px;
+        }
+
+        footer{
+            background-color: #202938;
+            color: #fff;
+            display: flex;
+            justify-content: space-evenly;
+            align-items:center;
+            height: 30vh;
+            gap: 30px;
+        }
+       .columnFooter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       }
+
+       footer div {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+       }
