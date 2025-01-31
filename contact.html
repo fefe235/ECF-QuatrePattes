@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quatre Pattes</title>
+    <link rel="icon" href="images/logoGreen 1.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Just+Another+Hand&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div><img src="images/logoW 1.png" alt="logo">
+            <h5><strong>Quatre Pattes</strong></h5></div>
+        <nav>
+            <a href="index.html">Acceuil</a>
+        <a href="">Contact</a>
+        <a href="index.html#encre"><button><img src="images/heartW 2.png" alt="petit coeur">Faire un don</button></a>
+        </nav>
+
+    </header>
+    <form method="get" class="form" onsubmit="return form()">
+        <div class="">
+            <label for="name">Nom </label>
+            <input type="text" name="name" id="name" required />
+        </div>
+        <div class="">
+        <label for="email">Email </label>
+        <input type="email" name="email" id="email" required />
+        </div>
+        <div>
+        <label for="sujet">Sujet</label>
+        <select name="sujet" id="sujet">
+            <option value="">--choisissez une option--</option>
+            <option value="Faire un don">Faire un don</option>
+            <option value="Devenir benevole">Devenir bénévole</option>
+            <option value="question general">question général</option>
+            </select>
+        </div>
+        <div class="">
+        <label for="msg">Message </label>
+        <textarea name="msg" id=""></textarea>
+        </div>
+        <div class="">
+        <button id="submit" type="submit"><img src="images/sendW 2.png" alt="avion en papier">Envoyer</button>
+        </div>
+</form>
+
+
+    <footer>
+        <div>
+            <h3>Quatre Pattes</h3>
+            <p>Ensemble, protégeons les animaux et donnons-leur une vie meilleure.</p>
+        </div>
+        <div>
+            <h3>Contact</h3>
+        <div class="columnFooter">
+            
+            <img src="images/mailW 1.png" alt="logo lettre">
+            <p>contact@quatrepattes.org</p>
+        </div>
+        </div>
+        <h3>Suivez-nous</h3>
+    </footer>
+</body>
+</html>

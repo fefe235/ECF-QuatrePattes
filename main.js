@@ -73,12 +73,12 @@ const blocQuestionB = document.querySelectorAll('#questionB > p');
 const blocQuestionC = document.querySelectorAll('#questionC > p');
 
 blocQuestionA[0].onclick = function (){
-    blocQuestionA[0].innerHTML = "Faux ! Cher Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.";
+    blocQuestionA[0].innerHTML = "Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement";
     faux(blocQuestionA[0],blocQuestionA[1])
 }
 
 blocQuestionA[1].onclick = function (){
-    blocQuestionA[0].innerHTML = "Faux ! Cher Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.";
+    blocQuestionA[0].innerHTML = "Faux ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.";
     vrai(blocQuestionA[0],blocQuestionA[1])
 }
 
@@ -87,7 +87,7 @@ blocQuestionB[0].onclick = function (){
     faux(blocQuestionB[0],blocQuestionB[1])
 }
 blocQuestionB[1].onclick = function (){
-    blocQuestionB[0].innerHTML = "Faux ! Nous acceuillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !";
+    blocQuestionB[0].innerHTML = "Vrai, ils refusent les animaux malades car c'est trop coûteux";
     vrai(blocQuestionB[0],blocQuestionB[1])
 }
 blocQuestionC[0].onclick = function (){
@@ -95,7 +95,7 @@ blocQuestionC[0].onclick = function (){
     faux(blocQuestionC[0],blocQuestionC[1])
 }
 blocQuestionC[1].onclick = function (){
-    blocQuestionC[0].innerHTML = "Faux ! Les besoins sont immenses et constants. Chaque don est précieux pour sauver plus d’animaux.";
+    blocQuestionC[0].innerHTML = "Vrai, elles reçoivent beaucoup d'argent des donateurs";
     vrai(blocQuestionC[0],blocQuestionC[1])
 }
 function faux(elementGauche, elementdroite) {

@@ -166,133 +166,165 @@ header button {
         grid-row-gap: 32px;
         height: 100vh;
         }
-        .animaux { 
-            grid-area: 1 / 1 / 4 / 4;
-            background-image: url(images/lunapng\ 2.png);
-            background-size: 100% 100%;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            gap: 30px;
-            padding-left: 3vw;
-        }
-        .luna { 
-            grid-area: 4 / 1 / 5 / 2;
-            background-image: url(images/lunapng\ 2.png);
-            background-size: 100% 100%;
-            border: solid 7px #3AA331;
-            border-radius: 12px;
-        }
-        .oscar {
-            grid-area: 4 / 2 / 5 / 3;
-            background-image: url(images/oscarpng\ 1.png);
-            background-size: 100% 100%;
-        }
-        .max {
-            grid-area: 4 / 3 / 5 / 4;
-            background-image: url(images/maxpng\ 2.png);
-            background-size: 100% 100%;
-        }
-        #light{
-            font-weight:100;
-        }
-        .containerQuizz{
-            background-color: #EDFEF6 ;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
-        }
-        .containerQuizz > div{
-            background-color: #fff;
-            border-radius: 12px;
-            justify-content: space-evenly;
-            align-items: flex-start;
-            width: 72vw ;
-            height: 30vh;
-            box-shadow:1px 1px 3px 1px rgba(0,0,0,0.17);
-            display: flex;
-            flex-direction: column;
-            padding: 3px;
-            
+.animaux { 
+    grid-area: 1 / 1 / 4 / 4;
+    background-image: url(images/lunapng\ 2.png);
+    background-size: 100% 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 30px;
+    padding-left: 3vw;
+}
+.luna { 
+    grid-area: 4 / 1 / 5 / 2;
+    background-image: url(images/lunapng\ 2.png);
+    background-size: 100% 100%;
+    border: solid 7px #3AA331;
+    border-radius: 12px;
+}
+.oscar {
+    grid-area: 4 / 2 / 5 / 3;
+    background-image: url(images/oscarpng\ 1.png);
+    background-size: 100% 100%;
+}
+.max {
+    grid-area: 4 / 3 / 5 / 4;
+    background-image: url(images/maxpng\ 2.png);
+    background-size: 100% 100%;
+}
+#light{
+    font-weight:100;
+}
+.containerQuizz{
+    background-color: #EDFEF6 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.containerQuizz > div{
+    background-color: #fff;
+    border-radius: 12px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 72vw ;
+    height: 30vh;
+    box-shadow:1px 1px 3px 1px rgba(0,0,0,0.17);
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    
 
-        }
-        .containerQuizz div div{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-            padding-left: 5vw;
-        }
-        .containerQuizz div div p{
-            background-color: #F3F4F6;
-            width: 30vw;
-            height: 9vh;
-            display: flex;
-            align-items: center;
-            border-radius: 12px;
+}
+.containerQuizz div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-left: 5vw;
+}
+.containerQuizz div div p{
+    background-color: #F3F4F6;
+    width: 30vw;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
 
-        }
-        .containerImpact{
-            padding: 12vh 0 12vh 0;
-            background-color: #EDFEF6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 50px;
-        }
-        .containerImpact div{
-            display: flex;
-            flex-direction: row;
-            gap:30px;
-        }
-        .containerImpact div div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+}
+.containerImpact{
+    padding: 12vh 0 12vh 0;
+    background-color: #EDFEF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.containerImpact div{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+.containerImpact div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        }
-        .containerImpact div div img{
-            height: 12vh;
-        }
-        .containerTemoignage{
-            margin: 8vh 0 8vh 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
+}
+.containerImpact div div img{
+    height: 12vh;
+}
+.containerTemoignage{
+    margin: 8vh 0 8vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 
 
-        }
-        .containerTemoignage div {
-            width: 22vw;
-            box-shadow:1px 1px 3px 1px rgba(0,0,0,0.17);
-            border-radius: 12px;
-        }
+}
+.containerTemoignage div {
+    width: 22vw;
+    box-shadow:1px 1px 3px 1px rgba(0,0,0,0.17);
+    border-radius: 12px;
+}
 
-        footer{
-            background-color: #202938;
-            color: #fff;
-            display: flex;
-            justify-content: space-evenly;
-            align-items:center;
-            height: 30vh;
-            gap: 30px;
-        }
-       .columnFooter {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-       }
+footer{
+    background-color: #202938;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 30vh;
+    gap: 30px;
+}
+.columnFooter {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
 
-       footer div {
-        display: flex;
-        gap: 30px;
-        flex-direction: column;
-       }
+footer div {
+display: flex;
+gap: 30px;
+flex-direction: column;
+}
+.form {
+margin: 8vh 12vw 8vh 12vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 50px;
+width: 70vw;
+box-shadow:1px 1px 3px 1px rgba(0,0,0,0.17);
+padding: 5% 0 5% 0;
+}
+.form div {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    justify-content: center;
+}
+textarea, input, select {
+    height: 30px;
+    border-radius: 8px;
+}
+#submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #057858;
+    border: none;
+    border-radius: 12px;
+    color: #FFF;
+    height: 8vh;
+    font-size: 25px;
+}
