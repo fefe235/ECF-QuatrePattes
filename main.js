@@ -38,7 +38,7 @@ for(const i in boutons){
     }
 }
 
-// histoire de réussite changer photo
+// histoire de réussite diaporama photo
 
 const photo = document.querySelectorAll('.grid > div');
 for(let i = 1 ; i<=3 ;i++){
@@ -64,4 +64,56 @@ for(let i = 1 ; i<=3 ;i++){
         }
 
     }
+}
+
+//quizz
+
+const blocQuestionA = document.querySelectorAll('#questionA > p');
+const blocQuestionB = document.querySelectorAll('#questionB > p');
+const blocQuestionC = document.querySelectorAll('#questionC > p');
+
+blocQuestionA[0].onclick = function (){
+    blocQuestionA[0].innerHTML = "Faux ! Cher Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.";
+    faux(blocQuestionA[0],blocQuestionA[1])
+}
+
+blocQuestionA[1].onclick = function (){
+    blocQuestionA[0].innerHTML = "Faux ! Cher Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.";
+    vrai(blocQuestionA[0],blocQuestionA[1])
+}
+
+blocQuestionB[0].onclick = function (){
+    blocQuestionB[0].innerHTML = "Faux ! Nous acceuillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !";
+    faux(blocQuestionB[0],blocQuestionB[1])
+}
+blocQuestionB[1].onclick = function (){
+    blocQuestionB[0].innerHTML = "Faux ! Nous acceuillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !";
+    vrai(blocQuestionB[0],blocQuestionB[1])
+}
+blocQuestionC[0].onclick = function (){
+    blocQuestionC[0].innerHTML = "Faux ! Les besoins sont immenses et constants. Chaque don est précieux pour sauver plus d’animaux.";
+    faux(blocQuestionC[0],blocQuestionC[1])
+}
+blocQuestionC[1].onclick = function (){
+    blocQuestionC[0].innerHTML = "Faux ! Les besoins sont immenses et constants. Chaque don est précieux pour sauver plus d’animaux.";
+    vrai(blocQuestionC[0],blocQuestionC[1])
+}
+function faux(elementGauche, elementdroite) {
+
+    elementdroite.remove();
+    elementGauche.style.width = "60vw";
+    elementGauche.style.height = "20vh";
+    elementGauche.style.backgroundColor = "#FFE2E4"; 
+    elementGauche.innerHTML = "<img src='images/x.png'>" + elementGauche.innerHTML;
+
+}
+
+function vrai(elementGauche, elementdroite) {
+
+    elementdroite.remove();
+    elementGauche.style.width = "60vw";
+    elementGauche.style.height = "20vh";
+    elementGauche.style.backgroundColor = "#DCFCE7"; 
+    elementGauche.innerHTML = "<img src='images/check.png'>" + elementGauche.innerHTML;
+
 }
