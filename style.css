@@ -314,8 +314,10 @@ padding: 5% 0 5% 0;
     justify-content: center;
 }
 textarea, input, select {
-    height: 30px;
     border-radius: 8px;
+}
+input,select{
+    height: 30px;
 }
 #submit{
     display: flex;
@@ -327,4 +329,8 @@ textarea, input, select {
     color: #FFF;
     height: 8vh;
     font-size: 25px;
+}
+.error{
+    color: #FF0000;
+    font-size: small;
 }
