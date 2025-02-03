@@ -1,22 +1,28 @@
 //menu burger
-const menu = document.getElementById('cacher')
-menu.onclick = function (){
-    menu.style.display = "none"
+function burger(){
+    document.getElementById('cacher').style.display = "none"
     document.getElementById('header').style.height="30vh"
-    document.getElementById('nav').innerHTML = " <img src='images/xW.png' id ='x'><a href='index.html'>Acceuil</a> <a href='contact.html'>Contact</a> <a href='#encre' id='donner'><button><img src='images/heartW 2.png' alt='petit coeur'>Faire un don</button></a>";
+    document.getElementById('header').innerHTML = " <img src='images/xW.png' id ='x'>" + document.getElementById('header').innerHTML
+
+    document.getElementById('nav').innerHTML = "<a href='index.html'>Acceuil</a> <a href='contact.html'>Contact</a> <a href='#encre' id='donner'><button><img src='images/heartW 2.png' alt='petit coeur'>Faire un don</button></a>";
     document.getElementById('nav').style.display = "flex";
     document.getElementById('header').style.display = "flex";
-    document.getElementById('header').style.flexDirection = "column";
+    document.getElementById('header').style.flexDirection = "row-reverse";
+    document.getElementById('header').style.alignItems = "flex-start";
     document.getElementById('nav').style.flexDirection = "column";
-    document.getElementById('donner').style.display= "block"
+    document.getElementById('nav').style.alignSelf="flex-end"
+    document.getElementById('logoTitre').style.position="relative"
+    document.getElementById('logoTitre').style.left="-170px"
+    document.getElementById('donner').style.display= "flex";
     document.getElementById('x').onclick= function(){
-        
-        document.getElementById('nav').innerHTML = "";
-        menu.style.display="flex";
+        document.getElementById('x').style.display = "none"
+    document.getElementById('logoTitre').style.position="static"
+    document.getElementById('nav').style.alignSelf="flex-start"
+    document.getElementById('nav').innerHTML = "";
+    document.getElementById('cacher').style.display="flex";
     document.getElementById('header').style.height="8vh"
     document.getElementById('header').style.flexDirection = "row";
     document.getElementById('nav').style.flexDirection = "row";
-
     }
 
 }
